@@ -65,7 +65,7 @@ public class ParkingLotTest {
         parkinglot.leave(1);
         parkinglot.leave(7);
         parkinglot.leave(5);
-        assertEquals(1, parkinglot.park());
+        assertEquals(5, parkinglot.park());
     }
 
 	@Test(expected = IllegalArgumentException.class)
