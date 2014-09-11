@@ -1,6 +1,6 @@
 public class ParkingLot {
 
-	private int[] leaved;
+	private final int[] leaved;
 	private int leaved_pos = 0;
 
 	public ParkingLot(int cap) {
