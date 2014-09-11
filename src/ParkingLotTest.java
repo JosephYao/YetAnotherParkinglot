@@ -58,6 +58,16 @@ public class ParkingLotTest {
 		assertEquals(parkinglot.park(), 2);
 	}
 
+    @Test
+    public void acceptanceTest() {
+        initParkingLot(10, 10);
+        parkinglot.leave(2);
+        parkinglot.leave(1);
+        parkinglot.leave(7);
+        parkinglot.leave(5);
+        assertEquals(1, parkinglot.park());
+    }
+
 	@Test(expected = IllegalArgumentException.class)
 	public void capacityShouldNotZero() {
 		initParkingLot(0, 0);
